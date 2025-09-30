@@ -1,7 +1,5 @@
 def same_parity(numbers):
-    if not numbers:
-        return []
-    parity = numbers[0] % 2
-    return [i for i in numbers if i % 2 == parity]
+    return [] if not numbers else [i for i in numbers if i % 2 == numbers[0] % 2]
 
-print(same_parity([1,2,3,4,5]))
+
+print(same_parity([1, 2, 3, 4, 5]))
